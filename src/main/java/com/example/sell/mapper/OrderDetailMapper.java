@@ -3,8 +3,10 @@ package com.example.sell.mapper;
 import com.example.sell.domain.OrderDetail;
 import com.example.sell.domain.OrderDetailExample;
 import java.util.List;
-import org.apache.ibatis.annotations.Param;
 
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+@Mapper
 public interface OrderDetailMapper {
     int countByExample(OrderDetailExample example);
 
